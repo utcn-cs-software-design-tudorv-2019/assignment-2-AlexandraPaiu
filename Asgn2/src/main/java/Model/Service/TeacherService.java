@@ -6,11 +6,11 @@ import org.springframework.stereotype.Service;
 import Model.Entity.Teacher;
 import Model.Repository.TeacherRepository;
 
-@Service
+@Service()
 public class TeacherService {
 
 	@Inject
-	TeacherRepository teacherRepository;
+	TeacherRepository teacherRepository ;
 	
 	public List<Teacher> getAllTeachersWithCourses(){
 		return teacherRepository.findAll();

@@ -19,7 +19,7 @@ public class Enrollment {
 	private Integer idEnrollment;
 		
 	@Column
-	private String firstName;
+	private double grade;
 	
 	@Column
 	private String exam;
@@ -42,12 +42,12 @@ public class Enrollment {
 		this.idEnrollment = idEnrollment;
 	}
 
-	public String getFirstName() {
-		return firstName;
+	public double getGrade() {
+		return grade;
 	}
 
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
+	public void setGrade(double grade) {
+		this.grade = grade;
 	}
 
 	public String getExam() {
